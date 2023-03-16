@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{ 
+    
+    
+    background:
+    
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+    url(img/mountain.jpg);
+    -webkit-background-size: cover;
+    min-height: 520px;
+    background-repeat: no-repeat;
+    width: 100%;
+           
+}
+ 
+   .nav-center{
+    display: flex;
+    position: relative;
+    min-height: 80px;
+  
+    
+    
+    
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    
+    
+    
+}
+
+.nav-header img {
+    width: 70px;
+    margin-left: 20px;
+    filter: contrast(20%);
+    
+    
+    
+}
+
+.nav-header .nav-toogle{
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+
+.nav-header .nav-toogle:hover{
+    color: rgb(148, 172, 224); ;
+}
+.links-container{
+    position: absolute;
+    right: 8%;
+    top: 9%;
+    display: flex;
+    list-style: none;
+    
+
+}
+
+.links-container li{
+    padding: 10px;
+}
+
+.links-container li a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    transition: 0.1s ease-in-out;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+.links-container li a:hover {
+    color: rgb(148, 172, 224);
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     color: white;
+     min-height: 870px;
+}
+
+.banner .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+   
+}
+
+.container h1{
+    font-size: 3.5rem;
+}
+.container p {
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 70%;
+    text-align: center;
+    
+}
+.container .btn{
+ margin-top: 20px;
+ margin-bottom: 40px;
+ text-decoration: none;
+ color: white;
+ border: 1px solid white;
+ padding: 8px;
+ padding-left: 12px;
+ padding-right: 12px;
+ letter-spacing: 2px;
+ transition: 0.5s ease-in-out;
+ font-size: 1.2rem;
+ 
+
+}
+
+.container .btn:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    min-height: 800px;
+}
+
+.section h2{
+    font-size: 2rem;
+}
+.section h2 span{
+    color: rgb(47, 87, 172);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color:rgb(47, 87, 172);
+  
+    }
+    .footer p {
+        color: white; 
+        letter-spacing: 2px;
+        font-size: 0.7rem;
+    }
+
+    @media only screen and (max-width: 799px){
+    
+    .banner{
+   display: inline-block;
+   text-align: center;
+   
+
+    
+    }
+
+    .container{
+      margin-top: 140px;
+    }
+
+.show-links{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    margin: auto; 
+    position: relative;
+    flex-direction: column;
+    width: 80%;
+
+  
+   }
+
+
+   .links-container li a{
+   
+    color: black;
+  }
+.nav-header .nav-toogle{
+    display: block;
+    color: black;
+    margin-right: 10px;
+}
+
+.nav-header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 7px;
+    z-index: 1;
+
+}
+
+.nav-header img {
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 3px;
+    
+    
+    
+}
+
+
+.footer p {
+    color: white; 
+    letter-spacing: 1px;
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+
+
+.banner{ 
+    z-index: 1;
+    
+    background:
+    
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+    url(img/mountain.jpg);
+    -webkit-background-size: cover;
+    min-height: 520px;
+    background-repeat: no-repeat;
+ 
+           
+}
+header{
+    background: none;
+}
+
+
+
+    }
