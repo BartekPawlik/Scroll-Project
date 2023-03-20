@@ -27,12 +27,15 @@ header{
    .nav-center{
     display: flex;
     position: relative;
-    min-height: 80px;
+    height: auto;
+    
+
   
     
     
     
 }
+
 .nav-header{
     display: flex;
     justify-content: space-between;
@@ -45,6 +48,7 @@ header{
 }
 
 .nav-header img {
+   margin-top: 10px;
     width: 70px;
     margin-left: 20px;
     filter: contrast(20%);
@@ -68,13 +72,17 @@ header{
     color: rgb(148, 172, 224); ;
 }
 .links-container{
-    position: absolute;
-    right: 8%;
-    top: 9%;
+  height: auto !important;
+  transition: 0.5s ease-in-out;
+  margin-top: 10px;
+  margin-right: 50px;
+   
+    
+}
+.links{
     display: flex;
     list-style: none;
-    
-
+  
 }
 
 .links-container li{
@@ -111,6 +119,7 @@ header{
    
 }
 
+
 .container h1{
     font-size: 3.5rem;
 }
@@ -142,6 +151,7 @@ header{
     color: black;
 
 }
+
 
 .section{
     display: flex;
@@ -176,6 +186,7 @@ header{
    display: inline-block;
    text-align: center;
    
+   
 
     
     }
@@ -184,21 +195,32 @@ header{
       margin-top: 140px;
     }
 
-.show-links{
+/* .show-links{
     display: flex;
     justify-content: center;
-    height: 200px;
+    max-height: 600px;
     z-index: 2;
     background-color: white;
-    width: 100%;
-    margin: auto; 
-    position: relative;
-    flex-direction: column;
     width: 80%;
+    margin: auto; 
+ 
+    
+   } */
 
-  
-   }
+   .links{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+   height: auto;
+    width: 100%;
 
+}
+.links-container{
+    margin-top: 40px;
+    height: 0;
+    overflow: hidden;
+    
+}
 
    .links-container li a{
    
@@ -217,6 +239,7 @@ header{
     margin: 0;
     padding: 7px;
     z-index: 1;
+    
 
 }
 
