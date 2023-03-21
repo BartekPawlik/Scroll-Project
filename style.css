@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{ 
@@ -47,6 +48,18 @@ header{
     
 }
 
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  rgb(47, 87, 172);
+    transition: 0.1s ease-in-out;
+
+
+}
+
 .nav-header img {
    margin-top: 10px;
     width: 70px;
@@ -72,7 +85,7 @@ header{
     color: rgb(148, 172, 224); ;
 }
 .links-container{
-  height: auto !important;
+  height: 0;
   transition: 0.5s ease-in-out;
   margin-top: 10px;
   margin-right: 50px;
@@ -263,7 +276,7 @@ header{
 
 
 .banner{ 
-    z-index: 1;
+    z-index: 5;
     
     background:
     
@@ -282,6 +295,16 @@ header{
 }
 header{
     background: none;
+}
+
+
+.fixed-nav{
+    display: flex;
+    position: relative;
+    height: 0;
+   
+
+
 }
 
 
