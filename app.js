@@ -32,6 +32,7 @@ window.addEventListener("scroll", function(){
    }else{
     navbar.classList.remove('fixed-nav')
    }
+
 })
 
 const scrollLinks = document.querySelectorAll(".scroll-link");
@@ -39,6 +40,9 @@ const scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach(function(link){
 link.addEventListener('click', function(e){
 e.preventDefault();
+
+linksContainer.style.height = 0
+
 const id = e.currentTarget.getAttribute ('href').slice(1);
 const element = document.getElementById(id);
 // calculate the heights
@@ -55,6 +59,7 @@ if(navHeight > 80) {
     position = position + containerHeight;
 }
 
+
 window.scrollTo({
     left: 0,
     top: position,})
@@ -63,3 +68,5 @@ window.scrollTo({
 });
 linksContainer.style.height = 0
 });
+
+
